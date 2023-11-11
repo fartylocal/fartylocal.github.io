@@ -78,4 +78,6 @@ h1 {
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
+    width: fit-content;
+    margin: auto;
 }
