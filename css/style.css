@@ -1,22 +1,45 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap');
+  :root {
+    --white: #fffafa;
+    --accent: #b4c4aa;
+}
 
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 body {
-    background-color: #fffafa;
+    background-color: var(--white);
 }
 
 .app-main {
-    background-color: #fffafa;
+    background-color: var(--white);
     border-radius: 10px;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
-    width: 300px;
-    height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    margin-top: -200px;
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+    box-shadow: var(--accent) 0px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: fadeInFromNone 1s ease-out;
+    -moz-animation: fadeInFromNone 1s ease-out;
+    -o-animation: fadeInFromNone 1s ease-out;
+    animation: fadeInFromNone 1s ease-out;
 }
 
 h1 {
@@ -34,26 +57,45 @@ h1 {
     color: #2b2b35;
     font-family: 'Inter', sans-serif;
     font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.submit {
+button {
+    --bg: #80e73c;
+    --text-color: #fff;
+    position: relative;
     width: 100%;
-    border:0px;
+    height: 45px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
     border-radius: 5px;
-    background-color: rgb(230, 247, 0);
-    margin-top: 10px;
-    height: 50px;
-    font-size: 25px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    cursor: pointer;
-}
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #5ca829 0px 7px 2px, #000 0px 8px 5px;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  button:active {
+    top: 4px;
+    box-shadow: #5ca829 0px 3px 2px,#000 0px 3px 5px;
+  } 
 .textinput {
-    background-color: #fffafa;
+    background-color: var(--white);
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #2b2b35;
+    color: #474755;
     font-family: 'Inter', sans-serif;
-    height: 40px;
+    font-size: 15px;
+    height: 60px;
     border: 0px;
     background: linear-gradient(#999999, #999999) center bottom 5px /calc(100% - 5px) 1px no-repeat;
     line-height: 50px;
@@ -64,6 +106,7 @@ h1 {
     color: #2b2b35;
     font-family: 'Inter', sans-serif;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 .reset {
     float: bottom;
