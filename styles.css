@@ -1,0 +1,45 @@
+body {
+    background-color: #fafcfd;
+}
+span a{
+    float: right;
+}
+.floatleft p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+}
+.names {
+    margin: auto;
+    width: 40vw;
+    transform: scale(1.5);
+}
+.names p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+}
+input{
+    height: 30px;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
+.floatleft {
+    float: left;
+}
+.main p{
+    background-color: #f2f6f8;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+}
+.main p:hover{
+    background-color: #e5eaec;
+}
+.main{
+    width: 60vw;
+    margin: auto;
+}
