@@ -8,5 +8,5 @@ function insertc(inputString, charToInsert) {
 btn.addEventListener('click', () => {
 var text = input.value
 var main = document.querySelector(".main")
-main.innerHTML = insertc(text,"︡")
+main.innerHTML = `<p>${insertc(text,"︡")}</p>`
 })
